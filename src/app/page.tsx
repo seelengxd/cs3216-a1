@@ -7,7 +7,7 @@ export default function Home() {
         <div className="header bg-stone-100 w-full flex justify-between align-center h-12 px-4 py-2">
           <div className="flex gap-2 items-center justify-center">
             <Image
-              src="./cs3216-a1/no bg.png"
+              src="/cs3216-a1/no bg.png"
               width="40"
               height="40"
               className="h-8 w-auto"
@@ -34,7 +34,7 @@ export default function Home() {
                 Aurora
               </h1>
               <Image
-                src="./cs3216-a1/no bg.png"
+                src="/cs3216-a1/no bg.png"
                 width="200"
                 height="200"
                 className="h-14 w-auto rotate-[-20deg]"
@@ -62,7 +62,7 @@ export default function Home() {
           </div>
 
           <Image
-            src="./cs3216-a1/pants photo-portrait.png"
+            src="/cs3216-a1/pants photo-portrait.png"
             width="400"
             height="800"
             alt="pants"
@@ -85,7 +85,7 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="./cs3216-a1//customised-models.png"
+                src="/cs3216-a1/customised-models.png"
                 width="400"
                 height="800"
                 alt="customised models"
@@ -104,13 +104,13 @@ export default function Home() {
             </div>
             <div className="flex">
               <Image
-                src="./cs3216-a1/pants photo-portrait.png"
+                src="/cs3216-a1/pants photo-portrait.png"
                 width="200"
                 height="400"
                 alt="pants"
               />
               <Image
-                src="./cs3216-a1/confirmation-portrait.png"
+                src="/cs3216-a1/confirmation-portrait.png"
                 width="200"
                 height="400"
                 alt="confirmation"
