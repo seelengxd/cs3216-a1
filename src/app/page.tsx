@@ -69,13 +69,16 @@ export default function Home() {
           ></Image>
         </div>
       </div>
-      <div id="features" className="bg-[#332622] w-full">
-        <div className="flex flex-col max-w-screen-lg py-32 text-white m-auto gap-8">
+      <div
+        id="features"
+        className="bg-[#332622] w-full px-[20px] py-[40px] md:p-0"
+      >
+        <div className="flex flex-col max-w-screen-lg md:py-32 text-white m-auto gap-[6em] md:gap-8">
           {/* first feature */}
-          <div className="flex justify-evenly gap-40">
+          <div className="flex flex-col-reverse gap-[20px] md:flex-row justify-evenly md:gap-40">
             <div className="flex flex-col justify-center">
               <h2 className="text-4xl font-bold">Customised models.</h2>
-              <p className="text-lg mt-8 max-w-80">
+              <p className="text-lg mt-8 md:max-w-80">
                 With our LIDAR technology, our fitting model will{" "}
                 <span className="font-bold">
                   automatically calculate your measurements{" "}
@@ -92,17 +95,17 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="flex justify-evenly gap-40 flex-row-reverse">
+          <div className="flex justify-evenly gap-0 md:gap-40 flex-col-reverse md:flex-row-reverse">
             <div className="flex flex-col justify-center">
               <h2 className="text-4xl font-bold">Hassle-free fitting.</h2>
-              <p className="text-lg mt-8 max-w-80">
+              <p className="text-lg mt-8 md:max-w-80">
                 Visualise clothes on yourself with just pictures.{" "}
                 <span className="font-bold">
                   No more queueing for fitting room.
                 </span>
               </p>
             </div>
-            <div className="flex">
+            <div className="grid grid-cols-2 md:flex">
               <Image
                 src="/cs3216-a1/pants photo-portrait.png"
                 width="200"
@@ -118,10 +121,10 @@ export default function Home() {
             </div>
           </div>
           {/* third feature */}
-          <div className="flex justify-evenly gap-40">
+          <div className="flex justify-evenly gap-[20px] md:gap-40 flex-col-reverse md:flex-row">
             <div className="flex flex-col justify-center">
               <h2 className="text-4xl font-bold">Recommendations.</h2>
-              <p className="text-lg mt-8 max-w-80">
+              <p className="text-lg mt-8 md:max-w-80">
                 Our AI matches your store items with the clothes you already
                 have.{" "}
                 <span className="font-bold">
@@ -142,7 +145,7 @@ export default function Home() {
       </div>
       <div
         id="cta"
-        className="h-screen w-full flex flex-col items-center justify-center bg-stone-100 gap-20"
+        className="h-screen w-full flex flex-col items-center justify-center bg-stone-100 gap-10 md:gap-20"
       >
         <div className="relative">
           <Image
@@ -169,7 +172,7 @@ export default function Home() {
         </div>
 
         <input
-          className=" placeholder:text-stone-600 bg-[#BFBFBF] w-[min(600px,90%)] p-4 rounded-xl shadow-[inset_0px_4px_4px_rgba(0,0,0,0.25)]"
+          className="mt-8 md:mt-0 placeholder:text-stone-600 bg-[#BFBFBF] w-[min(600px,90%)] p-4 rounded-xl shadow-[inset_0px_4px_4px_rgba(0,0,0,0.25)]"
           placeholder="your email, please!"
         ></input>
 
