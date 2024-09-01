@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
@@ -144,8 +151,80 @@ export default function Home() {
         </div>
       </div>
       <div
+        id="faq"
+        className="py-12 md:py-0 min-h-screen w-full flex flex-col items-center justify-center bg-orange-500 gap-10 md:gap-20"
+      >
+        <div className="relative max-w-screen-xl">
+          <h1 className="text-4xl md:text-6xl font-bold text-center text-white">
+            Frequently asked questions.
+          </h1>
+          <Accordion
+            className="max-w-screen-md mt-20 shadow-md px-4 bg-white mx-4"
+            type="single"
+            collapsible
+          >
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-xl">
+                Why use Aurora over other clothing websites?
+              </AccordionTrigger>
+              <AccordionContent className="text-lg">
+                We are the only application offering a 3D model custom-tailored
+                to each user's body type, along with clothing recommendations
+                based on your existing wardrobe. Buy clothes that fit with what
+                you have and never regret your purchases again.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+          <Accordion
+            className="max-w-screen-md mt-5 shadow-md px-4 bg-white mx-4"
+            type="single"
+            collapsible
+          >
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-xl">
+                How does Aurora recommend me outfits?
+              </AccordionTrigger>
+              <AccordionContent className="text-lg">
+                Aurora intelligently finds clothes you previously uploaded to
+                your wardrobe that go well with your current store clothes.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+          <Accordion
+            className="max-w-screen-md mt-5 shadow-md px-4 bg-white mx-4"
+            type="single"
+            collapsible
+          >
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-xl">
+                How much does Aurora cost?
+              </AccordionTrigger>
+              <AccordionContent className="text-lg">
+                $0.00. Aurora is free.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+          <Accordion
+            className="max-w-screen-md mt-5 shadow-md px-4 bg-white mx-4"
+            type="single"
+            collapsible
+          >
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-xl">
+                How does Aurora handle my wardrobe data?
+              </AccordionTrigger>
+              <AccordionContent className="text-lg">
+                We process it locally on your mobile phone if possible. If any
+                processing is done on our servers, we delete it as soon as it is
+                done.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
+      </div>
+      <div
         id="cta"
-        className="h-screen w-full flex flex-col items-center justify-center bg-stone-100 gap-10 md:gap-20"
+        className="h-screen w-full flex flex-col items-center justify-center bg-[#322622] gap-10 md:gap-20"
       >
         <div className="relative">
           <Image
@@ -155,7 +234,7 @@ export default function Home() {
             className="h-12 w-auto m-auto mb-4 md:hidden "
             alt="logo"
           ></Image>
-          <h1 className="text-4xl md:text-6xl font-bold text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-center text-stone-300">
             Register your interest<br></br>for{" "}
             <span className="from-orange-600 via-amber-500 to-orange-600 bg-gradient-to-r bg-clip-text text-transparent">
               Aurora{" "}
