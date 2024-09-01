@@ -65,6 +65,7 @@ export default function Home() {
             src="/pants photo-portrait.png"
             width="400"
             height="800"
+            alt="pants"
           ></Image>
         </div>
       </div>
@@ -83,7 +84,12 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <Image src="/customised-models.png" width="400" height="800" />
+              <Image
+                src="/customised-models.png"
+                width="400"
+                height="800"
+                alt="customised modelss"
+              />
             </div>
           </div>
           <div className="flex justify-evenly gap-40 flex-row-reverse">
@@ -97,11 +103,17 @@ export default function Home() {
               </p>
             </div>
             <div className="flex">
-              <Image src="/pants photo-portrait.png" width="200" height="400" />
+              <Image
+                src="/pants photo-portrait.png"
+                width="200"
+                height="400"
+                alt="pants"
+              />
               <Image
                 src="/confirmation-portrait.png"
                 width="200"
                 height="400"
+                alt="confirmation"
               />
             </div>
           </div>
@@ -119,6 +131,7 @@ export default function Home() {
             </div>
             <div className="min-w-[200px] flex justify-center">
               <Image
+                alt="recommended"
                 src="/recommended2-portrait.png"
                 width="200"
                 height="400"
