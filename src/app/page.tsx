@@ -130,7 +130,11 @@ export default function Home() {
       >
         <div className="relative">
           <h1 className="text-6xl font-bold text-center">
-            Register your interest<br></br>for Aurora today!
+            Register your interest<br></br>for{" "}
+            <span className="from-orange-600 via-amber-500 to-orange-600 bg-gradient-to-r bg-clip-text text-transparent">
+              Aurora{" "}
+            </span>
+            today!
           </h1>
           <Image
             src="/no bg.png"
