@@ -18,7 +18,7 @@ export default function Home() {
           <div className="flex items-center">
             <a
               href="#cta"
-              className="bg-orange-500 rounded-md text-white p-1 px-4 font-semibold"
+              className="bg-orange-500 rounded-md text-white p-1 px-4 font-semibold hover:bg-orange-600"
             >
               Register Interest
             </a>
@@ -176,7 +176,7 @@ export default function Home() {
           placeholder="your email, please!"
         ></input>
 
-        <button className="bg-orange-500 rounded-md text-white p-4 px-8 font-semibold text-2xl">
+        <button className="bg-orange-500 rounded-md text-white p-4 px-8 font-semibold text-2xl hover:bg-orange-600">
           Submit
         </button>
       </div>
