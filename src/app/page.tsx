@@ -10,6 +10,7 @@ import {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
+      {/* header and home */}
       <div className="h-screen w-full flex flex-col">
         <div className="header bg-stone-100 w-full flex justify-between align-center h-12 px-4 py-2">
           <div className="flex gap-2 items-center justify-center">
@@ -76,6 +77,7 @@ export default function Home() {
           ></Image>
         </div>
       </div>
+      {/* features */}
       <div
         id="features"
         className="bg-[#332622] w-full px-[20px] py-[40px] md:p-0"
@@ -150,6 +152,36 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* demo */}
+      <div
+        id="demo"
+        className="min-h-screen w-full flex flex-col items-center justify-center bg-stone-100 gap-10 md:gap-20"
+      >
+        <div className="relative max-w-screen-xl">
+          <h1 className="text-4xl md:text-6xl font-bold text-center">
+            View our demo.
+          </h1>
+        </div>
+        {/* 560, 315 */}
+        <div className="w-[min(800px,90vw)] h-[min(450px,50vw)] relative">
+          <iframe
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+            }}
+            className="w-full h-full"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/Efr0BV-d2HE?si=mIU0InHzZxICEjvq"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+      {/* faq */}
       <div
         id="faq"
         className="py-12 md:py-0 min-h-screen w-full flex flex-col items-center justify-center bg-orange-500 gap-10 md:gap-20"
@@ -223,6 +255,7 @@ export default function Home() {
           </Accordion>
         </div>
       </div>
+      {/* cta */}
       <div
         id="cta"
         className="h-screen w-full flex flex-col items-center justify-center bg-[#322622] gap-10 md:gap-20"
