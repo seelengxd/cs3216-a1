@@ -145,7 +145,14 @@ export default function Home() {
         className="h-screen w-full flex flex-col items-center justify-center bg-stone-100 gap-20"
       >
         <div className="relative">
-          <h1 className="text-6xl font-bold text-center">
+          <Image
+            src="/cs3216-a1/no bg.png"
+            width="80"
+            height="80"
+            className="h-12 w-auto m-auto mb-4 md:hidden "
+            alt="logo"
+          ></Image>
+          <h1 className="text-4xl md:text-6xl font-bold text-center">
             Register your interest<br></br>for{" "}
             <span className="from-orange-600 via-amber-500 to-orange-600 bg-gradient-to-r bg-clip-text text-transparent">
               Aurora{" "}
@@ -156,7 +163,7 @@ export default function Home() {
             src="/cs3216-a1/no bg.png"
             width="80"
             height="80"
-            className="h-12 w-auto absolute -right-[50px] -bottom-[10px] rotate-[-20deg]"
+            className="hidden md:block h-12 w-auto absolute -right-[50px] -bottom-[10px] rotate-[-20deg]"
             alt="logo"
           ></Image>
         </div>
