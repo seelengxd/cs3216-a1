@@ -16,9 +16,12 @@ export default function Home() {
             <div className="font-bold">Aurora</div>
           </div>
           <div className="flex items-center">
-            <button className="bg-orange-500 rounded-md text-white p-1 px-4 font-semibold">
+            <a
+              href="#cta"
+              className="bg-orange-500 rounded-md text-white p-1 px-4 font-semibold"
+            >
               Register Interest
-            </button>
+            </a>
           </div>
         </div>
         <div
