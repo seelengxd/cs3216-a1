@@ -169,9 +169,10 @@ export default function Home() {
               </AccordionTrigger>
               <AccordionContent className="text-lg">
                 We are the only application offering a 3D model custom-tailored
-                to each user's body type, along with clothing recommendations
-                based on your existing wardrobe. Buy clothes that fit with what
-                you have and never regret your purchases again.
+                to each user&apos;s body type, along with clothing
+                recommendations based on your existing wardrobe. Buy clothes
+                that fit with what you have and never regret your purchases
+                again.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
