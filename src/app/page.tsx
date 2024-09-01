@@ -26,11 +26,11 @@ export default function Home() {
         </div>
         <div
           id="home"
-          className="grid grid-cols-2 gap-40 max-w-screen-xl m-auto h-[100vh-3rem]"
+          className="text-center md:text-left grid md:grid-cols-2 md:gap-40 max-w-screen-xl m-auto h-[100vh-3rem] p-4"
         >
-          <div className="flex flex-col justify-center gap-8 py-32">
-            <div className="flex gap-4 align-center">
-              <h1 className="text-8xl font-bold from-orange-600 via-amber-500 to-orange-600 bg-gradient-to-r bg-clip-text text-transparent">
+          <div className="flex flex-col justify-center gap-2 md:gap-8 pt-8 pb-4 md:py-32">
+            <div className="justify-center md:justify-left flex gap-4 align-center">
+              <h1 className="text-5xl md:text-8xl font-bold from-orange-600 via-amber-500 to-orange-600 bg-gradient-to-r bg-clip-text text-transparent">
                 Aurora
               </h1>
               <Image
@@ -41,18 +41,18 @@ export default function Home() {
                 alt="logo"
               ></Image>
             </div>
-            <h2 className="text-5xl font-semibold">
+            <h2 className="text-2xl md:text-4xl font-semibold">
               Your clothes shopping <br></br>partner.
             </h2>
-            <div className="flex flex-col gap-4 mt-8">
-              <p className="text-2xl">
+            <div className="flex flex-col gap-1 md:gap-4 md:mt-8">
+              <p className="text-lg md:text-2xl">
                 Bring your closet{" "}
                 <span className="text-orange-600 font-semibold">
                   on-the-go{" "}
                 </span>
                 for fitting.
               </p>
-              <p className="text-2xl">
+              <p className="text-lg md:text-2xl">
                 <span className="text-orange-600 font-semibold">
                   Never regret
                 </span>{" "}
@@ -132,7 +132,7 @@ export default function Home() {
             <div className="min-w-[200px] flex justify-center">
               <Image
                 alt="recommended"
-                src="./cs3216-a1/recommended2-portrait.png"
+                src="/cs3216-a1/recommended2-portrait.png"
                 width="200"
                 height="400"
               />
@@ -153,7 +153,7 @@ export default function Home() {
             today!
           </h1>
           <Image
-            src="./cs3216-a1/no bg.png"
+            src="/cs3216-a1/no bg.png"
             width="80"
             height="80"
             className="h-12 w-auto absolute -right-[50px] -bottom-[10px] rotate-[-20deg]"
