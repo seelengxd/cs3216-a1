@@ -2,111 +2,153 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <div className="h-screen w-full flex flex-col">
+        <div className="header bg-stone-100 w-full flex justify-between align-center h-12 px-4">
+          <div className="flex gap-2 items-center justify-center">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+              src="/no bg.png"
+              width="40"
+              height="40"
+              className="h-8 w-auto"
+              alt="logo"
+            ></Image>
+            <div className="font-bold">Aurora</div>
+          </div>
+          <div className="flex items-center">
+            <button className="bg-orange-500 rounded-md text-white p-1 px-4 font-semibold">
+              Register Interest
+            </button>
+          </div>
+        </div>
+        <div
+          id="home"
+          className="grid grid-cols-2 gap-40 max-w-screen-xl m-auto h-[100vh-3rem]"
+        >
+          <div className="flex flex-col justify-center gap-8 py-32">
+            <div className="flex gap-4 align-center">
+              <h1 className="text-8xl font-bold from-orange-600 via-amber-500 to-orange-600 bg-gradient-to-r bg-clip-text text-transparent">
+                Aurora
+              </h1>
+              <Image
+                src="/no bg.png"
+                width="200"
+                height="200"
+                className="h-14 w-auto rotate-[-20deg]"
+                alt="logo"
+              ></Image>
+            </div>
+            <h2 className="text-5xl font-semibold">
+              Your clothes shopping <br></br>partner.
+            </h2>
+            <div className="flex flex-col gap-4 mt-8">
+              <p className="text-2xl">
+                Bring your closet{" "}
+                <span className="text-orange-600 font-semibold">
+                  on-the-go{" "}
+                </span>
+                for fitting.
+              </p>
+              <p className="text-2xl">
+                <span className="text-orange-600 font-semibold">
+                  Never regret
+                </span>{" "}
+                your purchases again.
+              </p>
+            </div>
+          </div>
+
+          <Image
+            src="/pants photo-portrait.png"
+            width="400"
+            height="800"
+          ></Image>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div id="features" className="bg-[#332622] w-full">
+        <div className="flex flex-col max-w-screen-lg py-32 text-white m-auto gap-8">
+          {/* first feature */}
+          <div className="flex justify-evenly gap-40">
+            <div className="flex flex-col justify-center">
+              <h2 className="text-4xl font-bold">Customised models.</h2>
+              <p className="text-lg mt-8 max-w-80">
+                With our LIDAR technology, our fitting model will{" "}
+                <span className="font-bold">
+                  automatically calculate your measurements{" "}
+                </span>{" "}
+                for accurate fitting.
+              </p>
+            </div>
+            <div>
+              <Image src="/customised-models.png" width="400" height="800" />
+            </div>
+          </div>
+          <div className="flex justify-evenly gap-40 flex-row-reverse">
+            <div className="flex flex-col justify-center">
+              <h2 className="text-4xl font-bold">Hassle-free fitting.</h2>
+              <p className="text-lg mt-8 max-w-80">
+                Visualise clothes on yourself with just pictures.{" "}
+                <span className="font-bold">
+                  No more queueing for fitting room.
+                </span>
+              </p>
+            </div>
+            <div className="flex">
+              <Image src="/pants photo-portrait.png" width="200" height="400" />
+              <Image
+                src="/confirmation-portrait.png"
+                width="200"
+                height="400"
+              />
+            </div>
+          </div>
+          {/* third feature */}
+          <div className="flex justify-evenly gap-40">
+            <div className="flex flex-col justify-center">
+              <h2 className="text-4xl font-bold">Recommendations.</h2>
+              <p className="text-lg mt-8 max-w-80">
+                Our AI matches your store items with the clothes you already
+                have.{" "}
+                <span className="font-bold">
+                  Figure out if it is a fit before it is too late.
+                </span>
+              </p>
+            </div>
+            <div className="min-w-[200px] flex justify-center">
+              <Image
+                src="/recommended2-portrait.png"
+                width="200"
+                height="400"
+              />
+            </div>
+          </div>
+        </div>
       </div>
+      <div
+        id="cta"
+        className="h-screen w-full flex flex-col items-center justify-center bg-stone-100 gap-20"
+      >
+        <div className="relative">
+          <h1 className="text-6xl font-bold text-center">
+            Register your interest<br></br>for Aurora today!
+          </h1>
+          <Image
+            src="/no bg.png"
+            width="80"
+            height="80"
+            className="h-12 w-auto absolute -right-[50px] -bottom-[10px] rotate-[-20deg]"
+            alt="logo"
+          ></Image>
+        </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <input
+          className=" placeholder:text-stone-600 bg-[#BFBFBF] w-[min(600px,90%)] p-4 rounded-xl shadow-[inset_0px_4px_4px_rgba(0,0,0,0.25)]"
+          placeholder="your email, please!"
+        ></input>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <button className="bg-orange-500 rounded-md text-white p-4 px-8 font-semibold text-2xl">
+          Submit
+        </button>
       </div>
     </main>
   );
